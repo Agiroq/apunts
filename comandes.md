@@ -1,5 +1,7 @@
 ##DB--COMMANNDS##
+
 CREATE DATABASE [name]; -> crear DB
+
 DROP DATABASE [name]; 	-> eliminar DB
 \c [name]		-> connectar a [name]
 \d 			-> Mostrar taules
@@ -7,6 +9,7 @@ _importar script_
 \i [path]		-> *importar* script
 
 ##DB--TABLES##
+
 \d [table]		-> *mostra atributs* de la taula
 
 _insertar tupla_ 
