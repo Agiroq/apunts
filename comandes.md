@@ -1,4 +1,4 @@
-##DB--COMMANNDS##
+#DB--COMMANNDS##
 ***
 ```sql
 CREATE DATABASE [name]; -- crear DB
