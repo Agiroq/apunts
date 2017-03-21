@@ -11,7 +11,7 @@ DROP DATABASE [name]; 	-- eliminar DB
 ```sql
 \d 			-- Mostrar taules
 ```
-* **importar script
+* **importar script**
 ```sql
 \i [path]		-- *importar* script
 ```
@@ -22,7 +22,7 @@ TABLES COMMANDS
 ```sql
 \d [table]		-- *mostra atributs* de la taula
 ```
-* **Crear taula
+* **Crear taula**
 ```sql
 CREATE TABLE [nom] ([atribut] serial,  		/* Serial és tipus numeric autoincremental 		      */
 		    [atr2] varchar(20),		/* Els atributs poden ser de tipus integer, float, varchar... */
@@ -30,18 +30,18 @@ CREATE TABLE [nom] ([atribut] serial,  		/* Serial és tipus numeric autoincreme
 		    primary key([atribut]));	
 ```
 
-* **insertar tupla 
+* **insertar tupla** 
 ```sql
 INSERT INTO [taula] (atr1, atr2, ...) VALUES ([atr1], [atr2], ...); 	-- *insertar* nova tupla
 INSERT INTO [taula] VALUES ([atr1],[atr2],...) 			-- *insertar tupla
 ```
-* **Seleccionar
+* **Seleccionar**
 ```sql
 SELECT * FROM [table];			-- mostra *totes* les entrades *tots* els atributs de [taula]
 SELECT [atr1], [atr2], ... FROM [table];	-- *mostra només* [atr1], [atr2], ... de totes les tuples de [taula]
 SELECT * FROM [taula] WHERE [atr][=|>|<|<=|>=|<>][value] -- mostra nomes els que compleixen la *condició*
 ```
-* **borrar registres
+* **borrar registres**
 ```sql
 DELETE FROM [table] WHERE [atr][=|>|<|<=|>=|<>][value];	-- Sobretot no oblidar *WHERE*
 ```
