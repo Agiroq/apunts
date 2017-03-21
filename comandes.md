@@ -1,4 +1,4 @@
-#DB--COMMANNDS##
+#DB COMMANNDS
 ***
 ```sql
 CREATE DATABASE [name]; -- crear DB
@@ -15,7 +15,7 @@ _importar script_
 \i [path]		-- *importar* script
 ```
 
-##DB--TABLES
+##TABLES COMMANDS
 ***
 ```sql
 \d [table]		-- *mostra atributs* de la taula
