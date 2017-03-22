@@ -1,6 +1,5 @@
 DB COMMANNDS
 ============
-***
 ```sql
 CREATE DATABASE [name]; -- crear DB
 ```
@@ -15,18 +14,19 @@ DROP DATABASE [name];   -- eliminar DB
 ```sql
 \i [path]		-- *importar* script
 ```
-
+***
 TABLES COMMANDS
 ===============
-***
+
 ```sql
 \d [table]		-- *mostra atributs* de la taula
 ```
 * **Crear taula**
 ```sql
-CREATE TABLE [nom] ([atribut] serial,  		/* Serial és tipus numeric autoincremental 		      */
+CREATE TABLE [nom] ([atribut] serial,  		/* Serial és tipus numeric autoincremental */
 		    [atr2] varchar(20),		/* Els atributs poden ser de tipus integer, float, varchar... */
-		    [atr3] float not null,      /* NOT NULL no deja que el campo quede vacío		      */
+		    [atr3] float not null,      /* NOT NULL no deja que el campo quede vacío */
+		    [atr4] [type] [*modifiers*] /* modifiers= primary key, not null,... */  
 		    primary key([atribut]));	
 ```
 
@@ -60,12 +60,30 @@ SELECT * FROM /*Comentari del codi*/ [table];
 ```sql
 TRUNCATE TABLE taula;
 
+***
 
-
-#Alter
+Alter
 ======
-_agregar columna, cambiar nom, ..._
+_agregar/borrar columna, cambiar nom, ..._
+* **canvi de nom d'atribut**
 ```sql
-ALTER TABLE taula RENAME COLUMN nom_from TO nom_to;
+ALTER TABLE taula RENAME COLUMN nom_from TO nom_to; --modifica el nom de l'atribut
 ```
+* **elimina atribut**
+```sql
+ALTER TABLE taula DROP COLUMN atr; --borra un atribut
+```
+* **agrega un atribut**
+```sql
+ALTER TABLE [taula] ADD COLUMN [nom] [type]; -- agregar columna
+```
+
+TIPUS DE DADES
+--------------
+boolean					_y/n, 1/0, _
+integer					_enter_					
+float					_decimal_
+character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
+character(n), char(n) 			_char de longitud 'n' obligatòria_
+text, varchar				_longitud variable il.limitada_
 
