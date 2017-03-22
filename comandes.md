@@ -3,12 +3,12 @@
 ```sql
 CREATE DATABASE [name]; -- crear DB
 ```
-DROP DATABASE [name]; 	-- eliminar DB
+DROP DATABASE [name];   -- eliminar DB
 ```sql
 \c [name]		-- connectar a [name]
 ```
 ```sql
-\d 			-- Mostrar taules
+\d                      -- Mostrar taules
 ```
 _importar script_
 ```sql
@@ -54,7 +54,16 @@ SELECT * FROM /*Comentari del codi*/ [table];
 ```
 	
 				
+* **buidar taula**
+```sql
+TRUNCATE TABLE taula;
 
 
 
+#Alter
+======
+_agregar columna, cambiar nom, ..._
+```sql
+ALTER TABLE taula RENAME COLUMN nom_from TO nom_to;
+```
 
