@@ -54,7 +54,7 @@ DELETE FROM [table] WHERE [atr][=|>|<|<=|>=|<>][value];	-- Sobretot no oblidar *
 ```
 * **editar registres**
 ```sql
-UPDATE [tablbe] SET [atr]=[value] WHERE [atr]=[value];
+UPDATE [table] SET [atr]=[value] WHERE [atr]=[value];
 ```
 * **afegir comentaris**
 ```sql
@@ -100,15 +100,22 @@ ___
 + text, varchar				_longitud variable il.limitada_
 ___
 **Modifiers**
-PRIMARY KEY	*Clau Primaria*
-NOT NULL	*No es pot deixar buit*
-DEFAULT [value] *Valor per defecte*
++ PRIMARY KEY	*Clau Primaria*
++ NOT NULL	*No es pot deixar buit*
++ DEFAULT [value] *Valor per defecte*
 
 ___
 **Comparadors**
 
-= / <> _equal/not equal_
-< / >  _less/more than_
-<=/ >= _less or equal/more or equal than_
-IS/IS NOT _per a valors NULL_
++ = / <> _equal/not equal_
++ < / >  _less/more than_
++ <=/ >= _less or equal/more or equal than_
++ IS/IS NOT _per a valors NULL_
+___
+**Operadors relacionals**
++ AND		ex-| WHERE [atr]=[value] AND [atr]=[value]
++ OR		ex-| WHERE [atr]=[value] AND IS NOT NULL
++ IN		ex-| WHERE [atr] IN ([value], [value], ...
+*  '------------¬ex-| WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición])
++ BETWEEN		ex-| WHERE [atr] BETWEEN x AND y
 
