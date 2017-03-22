@@ -23,12 +23,16 @@ TABLES COMMANDS
 ```
 * **Crear taula**
 ```sql
-CREATE TABLE [nom] ([atribut] serial,  		/* Serial és tipus numeric autoincremental */
-		    [atr2] varchar(20),		/* Els atributs poden ser de tipus integer, float, varchar... */
-		    [atr3] float not null,      /* NOT NULL no deja que el campo quede vacío */
-		    [atr4] [type] [*modifiers*] /* modifiers= primary key, not null,... */  
-		    primary key([atribut]));	
+CREATE TABLE [nom] ([atribut] serial,  		
+		    [atr2] varchar(20),		
+		    [atr3] float not null,      
+		    [atr4] [type] [*modifiers*],
+		    primary key([atribut]));--defineix atribut pKey	
 ```
+/* Serial és tipus numeric autoincremental */
+/* Els atributs poden ser de tipus integer, float, varchar... */
+/* NOT NULL no deja que el campo quede vacío */
+/* modifiers= primary key, not null,... */  
 
 * **insertar tupla** 
 ```sql
@@ -40,6 +44,7 @@ INSERT INTO [taula] VALUES ([atr1],[atr2],...) 			-- *insertar tupla
 SELECT * FROM [table];			-- mostra *totes* les entrades *tots* els atributs de [taula]
 SELECT [atr1], [atr2], ... FROM [table];	-- *mostra només* [atr1], [atr2], ... de totes les tuples de [taula]
 SELECT * FROM [taula] WHERE [atr][=|>|<|<=|>=|<>][value] -- mostra nomes els que compleixen la *condició*
+SELECT [atr] AS [nou nom] FROM [taula]; --AS canvia el nom d'atribut al mostrar-lo
 ```
 * **borrar registres**
 ```sql
@@ -59,7 +64,7 @@ SELECT * FROM /*Comentari del codi*/ [table];
 * **buidar taula**
 ```sql
 TRUNCATE TABLE taula;
-
+```
 ***
 
 Alter
@@ -77,13 +82,19 @@ ALTER TABLE taula DROP COLUMN atr; --borra un atribut
 ```sql
 ALTER TABLE [taula] ADD COLUMN [nom] [type]; -- agregar columna
 ```
+* **valor per defecte**
+```sql
+ALTER TABLE taula ALTER COLUMN atribut SET DEFAULT false;
+```
 
 TIPUS DE DADES
 --------------
-boolean					_y/n, 1/0, _
-integer					_enter_					
-float					_decimal_
-character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
-character(n), char(n) 			_char de longitud 'n' obligatòria_
-text, varchar				_longitud variable il.limitada_
++ boolean				_y/n, yes/no, 1/0, t/f, true/false_
++ integer				_enter_
++ serial 				_enter autoincremental_
++ float					_decimal_
++ character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
++ character(n), char(n) 		_char de longitud 'n' obligatòria_
++ text, varchar				_longitud variable il.limitada_
+
 
