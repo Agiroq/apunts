@@ -14,8 +14,8 @@ DROP DATABASE [name];   -- eliminar DB
 ```sql
 \i [path]		-- *importar* script
 ```
-***
-TABLES COMMANDS
+
+TABLE COMMANDS
 ===============
 
 ```sql
@@ -23,27 +23,29 @@ TABLES COMMANDS
 ```
 * **Crear taula**
 ```sql
-CREATE TABLE [nom] ([atribut] serial,  		
-		    [atr2] varchar(20),		
-		    [atr3] float not null,      
-		    [atr4] [type] [*modifiers*],
+CREATE TABLE [nom] ([atribut] [type] [*modifiers*],
+		    ...,
 		    primary key([atribut]));--defineix atribut pKey	
 ```
-/* Serial és tipus numeric autoincremental */
-/* Els atributs poden ser de tipus integer, float, varchar... */
-/* NOT NULL no deja que el campo quede vacío */
-/* modifiers= primary key, not null,... */  
+```postgres
+CREATE TABLE [nom] (id serial,		/* exemple amb modificadors */	 
+		    titol varchar(30),
+		    autor NOT NULL DEFAULT 'desconocido',
+		    editoraial varchar(20),
+		    PRIMARY KEY(id);
+```
 
 * **insertar tupla** 
 ```sql
 INSERT INTO [taula] (atr1, atr2, ...) VALUES ([atr1], [atr2], ...); 	-- *insertar* nova tupla
-INSERT INTO [taula] VALUES ([atr1],[atr2],...) 			-- *insertar tupla
+INSERT INTO [taula] VALUES ([atr1],[atr2],...) 				-- insertar tupla
+INSERT INTO [taula] ([atr], [atr_amb_default],..) VALUES ([value], default, ...); --insertar quan hi ha un valor **default**
 ```
 * **Seleccionar**
 ```sql
 SELECT * FROM [table];			-- mostra *totes* les entrades *tots* els atributs de [taula]
 SELECT [atr1], [atr2], ... FROM [table];	-- *mostra només* [atr1], [atr2], ... de totes les tuples de [taula]
-SELECT * FROM [taula] WHERE [atr][=|>|<|<=|>=|<>][value] -- mostra nomes els que compleixen la *condició*
+SELECT * FROM [taula] WHERE [atr][comparador][value] -- mostra nomes els que compleixen la *condició*
 SELECT [atr] AS [nou nom] FROM [taula]; --AS canvia el nom d'atribut al mostrar-lo
 ```
 * **borrar registres**
@@ -72,11 +74,11 @@ Alter
 _agregar/borrar columna, cambiar nom, ..._
 * **canvi de nom d'atribut**
 ```sql
-ALTER TABLE taula RENAME COLUMN nom_from TO nom_to; --modifica el nom de l'atribut
+ALTER TABLE [taula] RENAME COLUMN [nom_from] TO [nom_to]; --modifica el nom de l'atribut
 ```
 * **elimina atribut**
 ```sql
-ALTER TABLE taula DROP COLUMN atr; --borra un atribut
+ALTER TABLE [taula] DROP COLUMN [atr]; --borra un atribut
 ```
 * **agrega un atribut**
 ```sql
@@ -84,11 +86,11 @@ ALTER TABLE [taula] ADD COLUMN [nom] [type]; -- agregar columna
 ```
 * **valor per defecte**
 ```sql
-ALTER TABLE taula ALTER COLUMN atribut SET DEFAULT false;
+ALTER TABLE [taula] ALTER COLUMN [atribut] SET DEFAULT [false];
 ```
+___
+**Tipus de dades**
 
-TIPUS DE DADES
---------------
 + boolean				_y/n, yes/no, 1/0, t/f, true/false_
 + integer				_enter_
 + serial 				_enter autoincremental_
@@ -96,5 +98,17 @@ TIPUS DE DADES
 + character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
 + character(n), char(n) 		_char de longitud 'n' obligatòria_
 + text, varchar				_longitud variable il.limitada_
+___
+**Modifiers**
+PRIMARY KEY	*Clau Primaria*
+NOT NULL	*No es pot deixar buit*
+DEFAULT [value] *Valor per defecte*
 
+___
+**Comparadors**
+
+= / <> _equal/not equal_
+< / >  _less/more than_
+<=/ >= _less or equal/more or equal than_
+IS/IS NOT _per a valors NULL_
 
