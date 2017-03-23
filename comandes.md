@@ -33,6 +33,13 @@ ___
 + IN		ex-| WHERE [atr] IN ([value], [value], ...
 *  '-----------¬ex-| WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición])
 + BETWEEN		ex-| WHERE [atr] BETWEEN x AND y
+___
+**Operadors aritmetics**
+|simbol | operacio | simbol |operació |
+|:-----:|:--------:|:------:|:-------:|
+| *    |multiplicació | /  |  divisió  |
+| %    |modul | ||
+| +    |suma	   | -  | resta |
 
 DB COMMANNDS
 ============
@@ -154,7 +161,7 @@ ALTER TABLE [taula] ADD PRIMARY KEY ([atr]);
 ```sql
 ALTER TABLE [taula] DROP CONSTRAINT nomTaula_pkey;
 ```
-* **Crear una foreign key**
+* **Crear una tabla con una foreign key**
 ```sql
 CREATE TABLE [name](OrderID serial primary key, PersonID int,
 /* asignem pkey */  PRIMARY KEY(OrderID),
@@ -164,4 +171,10 @@ CREATE TABLE [name](OrderID serial primary key, PersonID int,
 ```sql
 ALTER TABLE [taula] DROP CONSTRAINT [nom_de_la_foreing_key];
 ```
+
+* **Agregar una foreing key a una taula**
+```sql
+ALTER TABLE [taula] ADD CONSTRAINT [name] FOREIGN KEY ([atr_fk]) REFERENCES [taula_origen] ([atr_origen]);
+```
+
 
