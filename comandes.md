@@ -2,17 +2,21 @@ DEFINITIONS
 ===========
 **Tipus de dades**
 
-+ boolean				_y/n, yes/no, 1/0, t/f, true/false_
-+ integer, int, int4			_enter_
-+ smallint, int2			_enter de fins a 5 digits (-32000/32000)_
-+ bigint, int8				_desde (-9*10^17/9*10^17)_	
-+ serial/bigserial			_enter autoincremental int/bigint_
-+ decimal/numeric(t,d)			_**t**=total digits /**d**=total decimalsprecisión_
-+ float					_decimal fins a 6 decimals_
-+ double precision			_decimal fins a 15 xifres_
-+ character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
-+ character(n), char(n) 		_char de longitud 'n' obligatòria_
-+ text, varchar				_longitud variable il.limitada_
++ boolean		>		_y/n, yes/no, 1/0, t/f, true/false_
++ integer, int, int4	>>		_enter_
++ smallint, int2	>>		_enter de fins a 5 digits (-32000/32000)_
++ bigint, int8		>>		_desde (-9*10^17/9*10^17)_	
++ serial/bigserial	>>		_enter autoincremental int/bigint_
++ decimal/numeric(t,d)	>>		_**t**=total digits /**d**=total decimalsprecisión_
++ float			>>		_decimal fins a 6 decimals_
++ double precision	>>		_decimal fins a 15 xifres_
++ character varyng(n), varchar(n) >> 	_longitud de 'n' caràcters_
++ character(n), char(n) 	>>	_char de longitud 'n' obligatòria_
++ text, varchar			>>	_longitud variable il.limitada_
++ date 	*format 'YYYY-01-1'*	>>	_desde 4317A.C. fins 32767D.C._
++ time 	*format 'hh:mm:ss*	>>	_guarda la hora_
++ timestamp  *YYYY-MM-DD hh:mm:ss* >>	_data i hora_
++ timestamptz  *YYYY-MM-DD hh:mm:ss±tz* >>	_data i hora *guardael TIME ZONE'*_
 ___
 **Modifiers**
 + PRIMARY KEY	*Clau Primaria*
@@ -35,11 +39,19 @@ ___
 + BETWEEN		ex-| WHERE [atr] BETWEEN x AND y
 ___
 **Operadors aritmetics**
-|simbol | operacio | simbol |operació |
-|:-----:|:--------:|:------:|:-------:|
-| *    |multiplicació | /  |  divisió  |
-| %    |modul | ||
-| +    |suma	   | -  | resta |
+|simbol | operacio     | simbol |operació |
+|:-----:|:------------:|:------:|:-------:|
+| *     |multiplicació | /      | divisió |
+| %     |modul 	       |        |         |
+| +     |suma	       | -      | resta   |
+
+**Format de cadenes**
+```sql
+SELECT ( [atr] || 'string' || [atr] ||...) AS [header_name] FROM [taula];
+              ----        ----
+            concatena    concat
+```
+
 
 DB COMMANNDS
 ============
@@ -114,7 +126,7 @@ SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;
 
 ***
 
-Alter	[https://www.postgresql.org/docs/9.1/static/sql-altertable.html][postgres documentation]
+Alter	[postgres documentation][https://www.postgresql.org/docs/9.1/static/sql-altertable.html]
 ======
 _agregar/borrar columna, cambiar nom, ..._
 
