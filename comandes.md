@@ -1,3 +1,7 @@
+___
+POSTGRES BASICS [oficial documentation](https://www.postgresql.org/docs/9.1/static/index.html)
+===============
+___
 DEFINITIONS
 ===========
 ###Tipus de dades
@@ -189,4 +193,12 @@ ALTER TABLE [taula] DROP CONSTRAINT [nom_de_la_foreing_key];
 ALTER TABLE [taula] ADD CONSTRAINT [name] FOREIGN KEY ([atr_fk]) REFERENCES [taula_origen] ([atr_origen]);
 ```
 
+
+
+```sql
+SELECT pais, to_char(fecha, 'month') AS month, date_part('day', fecha)AS day, date_part('hour', fecha) AS hora 
+FROM visitas 
+ORDER BY 2, 3, 4;
+
+```
 
