@@ -1,3 +1,39 @@
+DEFINITIONS
+===========
+**Tipus de dades**
+
++ boolean				_y/n, yes/no, 1/0, t/f, true/false_
++ integer, int, int4			_enter_
++ smallint, int2			_enter de fins a 5 digits (-32000/32000)_
++ bigint, int8				_desde (-9*10^17/9*10^17)_	
++ serial/bigserial			_enter autoincremental int/bigint_
++ decimal/numeric(t,d)			_**t**=total digits /**d**=total decimalsprecisión_
++ float					_decimal fins a 6 decimals_
++ double precision			_decimal fins a 15 xifres_
++ character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
++ character(n), char(n) 		_char de longitud 'n' obligatòria_
++ text, varchar				_longitud variable il.limitada_
+___
+**Modifiers**
++ PRIMARY KEY	*Clau Primaria*
++ NOT NULL	*No es pot deixar buit*
++ DEFAULT [value] *Valor per defecte*
+
+___
+**Comparadors**
+
++ = / <> _equal/not equal_
++ < / >  _less/more than_
++ <=/ >= _less or equal/more or equal than_
++ IS/IS NOT _per a valors NULL_
+___
+**Operadors relacionals**
++ AND		ex-| WHERE [atr]=[value] AND [atr]=[value]
++ OR		ex-| WHERE [atr]=[value] AND IS NOT NULL
++ IN		ex-| WHERE [atr] IN ([value], [value], ...
+*  '-----------¬ex-| WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición])
++ BETWEEN		ex-| WHERE [atr] BETWEEN x AND y
+
 DB COMMANNDS
 ============
 ```sql
@@ -44,7 +80,6 @@ INSERT INTO [taula] (atr1, atr2, ...) VALUES ([atr1], [atr2], ...); 	-- *inserta
 INSERT INTO [taula] VALUES ([atr1],[atr2],...) 				-- insertar tupla
 INSERT INTO [taula] ([atr], [atr_amb_default],..) VALUES ([value], default, ...); --insertar quan hi ha un valor **default**
 ```
-
 * **borrar registres**
 ```sql
 DELETE FROM [table] WHERE [atr][=|>|<|<=|>=|<>][value];	-- Sobretot no oblidar *WHERE*
@@ -65,7 +100,6 @@ SELECT [atr1], [atr2], ... FROM [table];	-- *mostra només* [atr1], [atr2], ... 
 SELECT * FROM [taula] WHERE [atr][comparador][value] -- mostra nomes els que compleixen la *condició*
 SELECT [atr] AS [nou nom] FROM [taula]; --AS canvia el nom d'atribut al mostrar-lo
 ```
-
 * **Ordenar**
 ```sql
 SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;
@@ -73,65 +107,61 @@ SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;
 
 ***
 
-Alter
+Alter	[https://www.postgresql.org/docs/9.1/static/sql-altertable.html][postgres documentation]
 ======
 _agregar/borrar columna, cambiar nom, ..._
+
+```sql
+ALTER TABLE [taula] **action**
+####actions
 * **canvi de nom d'atribut**
 ```sql
-ALTER TABLE [taula] RENAME COLUMN [nom_from] TO [nom_to]; --modifica el nom de l'atribut
+... RENAME COLUMN [nom_from] TO [nom_to]; --modifica el nom de l'atribut
 ```
 * **elimina atribut**
 ```sql
-ALTER TABLE [taula] DROP COLUMN [atr]; --borra un atribut
+... DROP COLUMN [atr]; --borra un atribut
 ```
 * **agrega un atribut**
 ```sql
-ALTER TABLE [taula] ADD COLUMN [nom] [type] ~ [modifier]; -- agregar columna
+... ADD COLUMN [nom] [type] ~ [modifier]; -- agregar columna
 ```
 * **valor per defecte**
 ```sql
-ALTER TABLE [taula] ALTER COLUMN [atribut] SET DEFAULT [false];
+... ALTER COLUMN [atribut] SET DEFAULT [false];
 ```
+* **definir primary key**
+```sql
+... ADD PRIMARY KEY ([atr]);
+```
+* **eliminar primary key modifier**
+```sql
+... DROP CONSTRAINT nomTaula_pkey;
+```
+* **definir/eliminar NOT NULL**
+```sql
+... [SET | DROP] NOT NULL;
+```
+___
+
+Relacions
+=========
 * **definir primary key**
 ```sql
 ALTER TABLE [taula] ADD PRIMARY KEY ([atr]);
 ```
-* **eliminar modificador**
+* **eliminar primary key modifier**
 ```sql
-ALTER TABLE [taula] DROP CONSTRAINT nomTaula_pkey
+ALTER TABLE [taula] DROP CONSTRAINT nomTaula_pkey;
 ```
-___
-**Tipus de dades**
-
-+ boolean				_y/n, yes/no, 1/0, t/f, true/false_
-+ integer, int, int4			_enter_
-+ smallint, int2			_enter de fins a 5 digits (-32000/32000)_
-+ bigint, int8				_desde (-9*10^17/9*10^17)_	
-+ serial/bigserial			_enter autoincremental int/bigint_
-+ decimal/numeric(t,d)			_**t**=total digits /**d**=total decimalsprecisión_
-+ float					_decimal fins a 6 decimals_
-+ double precision			_decimal fins a 15 xifres_
-+ character varyng(n), varchar(n) 	_longitud de 'n' caràcters_
-+ character(n), char(n) 		_char de longitud 'n' obligatòria_
-+ text, varchar				_longitud variable il.limitada_
-___
-**Modifiers**
-+ PRIMARY KEY	*Clau Primaria*
-+ NOT NULL	*No es pot deixar buit*
-+ DEFAULT [value] *Valor per defecte*
-
-___
-**Comparadors**
-
-+ = / <> _equal/not equal_
-+ < / >  _less/more than_
-+ <=/ >= _less or equal/more or equal than_
-+ IS/IS NOT _per a valors NULL_
-___
-**Operadors relacionals**
-+ AND		ex-| WHERE [atr]=[value] AND [atr]=[value]
-+ OR		ex-| WHERE [atr]=[value] AND IS NOT NULL
-+ IN		ex-| WHERE [atr] IN ([value], [value], ...
-*  '-----------¬ex-| WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición])
-+ BETWEEN		ex-| WHERE [atr] BETWEEN x AND y
+* **Crear una foreign key**
+```sql
+CREATE TABLE [name](OrderID serial primary key, PersonID int,
+/* asignem pkey */  PRIMARY KEY(OrderID),
+/* definim fkey */  CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+```
+* **Eliminar una foreign key**
+```sql
+ALTER TABLE [taula] DROP CONSTRAINT [nom_de_la_foreing_key];
+```
 
