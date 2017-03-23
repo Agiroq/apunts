@@ -13,10 +13,10 @@ DEFINITIONS
 + **character varyng(n), varchar(n)**  	_longitud de 'n' caràcters_
 + **character(n), char(n)** 	    	_char de longitud 'n' obligatòria_
 + **text, varchar**			_longitud variable il.limitada_
-+ **date** 	*format 'YYYY-01-1'*	_desde 4317A.C. fins 32767D.C._
-+ **time** 	*format 'hh:mm:ss*	_guarda la hora_
-+ **timestamp**  *YYYY-MM-DD hh:mm:ss*  _data i hora_
-+ **timestamptz**  *YYYY-MM-DD hh:mm:ss±tz*   	_data i hora *guardael TIME ZONE'*_
++ **date** 	'YYYY-01-1'		_desde 4317A.C. fins 32767D.C._
++ **time** 	'hh:mm:ss'		_guarda la hora_
++ **timestamp**  'YYYY-MM-DD hh:mm:ss'  _data i hora_
++ **timestamptz** 'YYYY-MM-DD hh:mm:ss±tz'   	_data i hora *guardael TIME ZONE'*_
 ___
 ###Modifiers
 + PRIMARY KEY	*Clau Primaria*
@@ -126,7 +126,7 @@ SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;
 
 ***
 
-Alter	[postgres documentation][https://www.postgresql.org/docs/9.1/static/sql-altertable.html]
+Alter	[postgres documentation](https://www.postgresql.org/docs/9.1/static/sql-altertable.html)
 ======
 _agregar/borrar columna, cambiar nom, ..._
 
