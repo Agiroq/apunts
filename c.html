@@ -1,0 +1,249 @@
+<!-- Markdown => HTML -->
+<hr />
+<h1>POSTGRES BASICS <a href="https://www.postgresql.org/docs/9.1/static/index.html">oficial documentation</a></h1>
+<hr />
+<h1>DEFINITIONS</h1>
+<h3>Tipus de dades</h3>
+<ul>
+<li><strong>boolean</strong>                   <em>y/n, yes/no, 1/0, t/f, true/false</em></li>
+<li><strong>integer, int, int4</strong>        <em>enter</em></li>
+<li><strong>smallint, int2</strong>                <em>enter de fins a 5 digits (-32000/32000)</em></li>
+<li><strong>bigint, int8</strong>          <em>desde (-9<em>10^17/9</em>10^17)</em>  </li>
+<li><strong>serial/bigserial</strong>              <em>enter autoincremental int/bigint</em></li>
+<li><strong>decimal/numeric(t,d)</strong>          <em><strong>t</strong>=total digits /<strong>d</strong>=total decimalsprecisión</em></li>
+<li><strong>float</strong>                 <em>decimal fins a 6 decimals</em></li>
+<li><strong>double precision</strong>              <em>decimal fins a 15 xifres</em></li>
+<li><strong>character varyng(n), varchar(n)</strong>   <em>longitud de 'n' caràcters</em></li>
+<li><strong>character(n), char(n)</strong>             <em>char de longitud 'n' obligatòria</em></li>
+<li><strong>text, varchar</strong>         <em>longitud variable il.limitada</em></li>
+<li><strong>date</strong>  'YYYY-01-1'     <em>desde 4317A.C. fins 32767D.C.</em></li>
+<li><strong>time</strong>  'hh:mm:ss'      <em>guarda la hora</em></li>
+<li><strong>timestamp</strong>  'YYYY-MM-DD hh:mm:ss'  <em>data i hora</em></li>
+<li><strong>timestamptz</strong> 'YYYY-MM-DD hh:mm:ss±tz'      <em>data i hora <em>guardael TIME ZONE'</em></em></li>
+</ul>
+<hr />
+<h3>Modifiers</h3>
+<ul>
+<li>PRIMARY KEY   <em>Clau Primaria</em></li>
+<li>NOT NULL  <em>No es pot deixar buit</em></li>
+<li>DEFAULT [value] <em>Valor per defecte</em></li>
+</ul>
+<hr />
+<h3>Comparadors</h3>
+<ul>
+<li>= / &lt;&gt; <em>equal/not equal</em></li>
+<li>&lt; / &gt;  <em>less/more than</em></li>
+<li>&lt;=/ &gt;= <em>less or equal/more or equal than</em></li>
+<li>IS/IS NOT <em>per a valors NULL</em></li>
+</ul>
+<hr />
+<h3>Operadors relacionals</h3>
+<ul>
+<li>AND       ex-| WHERE [atr]=[value] AND [atr]=[value]</li>
+<li>OR        ex-| WHERE [atr]=[value] AND IS NOT NULL</li>
+<li>IN        ex-| WHERE [atr] IN ([value], [value], ...</li>
+<li>'-----------¬ex-| WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición])</li>
+<li>BETWEEN       ex-| WHERE [atr] BETWEEN x AND y</li>
+</ul>
+<hr />
+<h3>Operadors aritmetics</h3>
+<table>
+<thead>
+<tr>
+<th align="center">simbol</th>
+<th align="center">operacio</th>
+<th align="center">simbol</th>
+<th align="center">operació</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">*</td>
+<td align="center">multiplicació</td>
+<td align="center">/</td>
+<td align="center">divisió</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="center">modul</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center">suma</td>
+<td align="center">-</td>
+<td align="center">resta</td>
+</tr>
+</tbody>
+</table>
+<h3>Format de cadenes</h3>
+<pre><code class="sql">SELECT ( [atr] || 'string' || [atr] ||...) AS [header_name] FROM [taula];
+              ----        ----
+            concatena    concat
+</code></pre>
+
+<h1>DB COMMANNDS</h1>
+<pre><code class="sql">CREATE DATABASE [name]; -- crear DB
+</code></pre>
+
+<p>DROP DATABASE [name];   -- eliminar DB</p>
+<pre><code class="sql">\c [name]       -- connectar a [name]
+</code></pre>
+
+<pre><code class="sql">\d                      -- Mostrar taules
+</code></pre>
+
+<ul>
+<li><strong>importar script</strong></li>
+</ul>
+<pre><code class="sql">\i [path]       -- *importar* script
+</code></pre>
+
+<h1>TABLE COMMANDS</h1>
+<pre><code class="sql">\d [table]      -- *mostra atributs* de la taula
+</code></pre>
+
+<ul>
+<li><strong>Crear taula</strong></li>
+</ul>
+<pre><code class="sql">CREATE TABLE [nom] ([atribut] [type] [*modifiers*],
+            ...,
+            primary key([atr], [atr2]));--defineix atribut/s clau   
+</code></pre>
+
+<pre><code class="postgres">CREATE TABLE [nom] (id serial,      /* exemple amb modificadors */   
+            titol varchar(30),
+            autor NOT NULL DEFAULT 'desconocido',
+            editoraial varchar(20),
+            PRIMARY KEY(id);
+</code></pre>
+
+<ul>
+<li><strong>buidar taula</strong></li>
+</ul>
+<pre><code class="sql">TRUNCATE TABLE taula;
+</code></pre>
+
+<ul>
+<li><strong>insertar tupla</strong> </li>
+</ul>
+<pre><code class="sql">INSERT INTO [taula] (atr1, atr2, ...) VALUES ([atr1], [atr2], ...);     -- *insertar* nova tupla
+INSERT INTO [taula] VALUES ([atr1],[atr2],...)              -- insertar tupla
+INSERT INTO [taula] ([atr], [atr_amb_default],..) VALUES ([value], default, ...); --insertar quan hi ha un valor **default**
+</code></pre>
+
+<ul>
+<li><strong>borrar registres</strong></li>
+</ul>
+<pre><code class="sql">DELETE FROM [table] WHERE [atr][=|&gt;|&lt;|&lt;=|&gt;=|&lt;&gt;][value]; -- Sobretot no oblidar *WHERE*
+</code></pre>
+
+<ul>
+<li><strong>editar registres</strong></li>
+</ul>
+<pre><code class="sql">UPDATE [table] SET [atr]=[value] WHERE [atr]=[value];
+</code></pre>
+
+<ul>
+<li><strong>afegir comentaris</strong></li>
+</ul>
+<pre><code class="sql">SELECT * FROM [table]; --Comentari a mostrar
+SELECT * FROM /*Comentari del codi*/ [table];
+</code></pre>
+
+<ul>
+<li><strong>Seleccionar</strong></li>
+</ul>
+<pre><code class="sql">SELECT * FROM [table];          -- mostra *totes* les entrades *tots* els atributs de [taula]
+SELECT [atr1], [atr2], ... FROM [table];    -- *mostra només* [atr1], [atr2], ... de totes les tuples de [taula]
+SELECT * FROM [taula] WHERE [atr][comparador][value] -- mostra nomes els que compleixen la *condició*
+SELECT [atr] AS [nou nom] FROM [taula]; --AS canvia el nom d'atribut al mostrar-lo
+</code></pre>
+
+<ul>
+<li><strong>Ordenar</strong></li>
+</ul>
+<pre><code class="sql">SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;
+</code></pre>
+
+<hr />
+<h1>Alter   <a href="https://www.postgresql.org/docs/9.1/static/sql-altertable.html">postgres documentation</a></h1>
+<p><em>agregar/borrar columna, cambiar nom, ...</em></p>
+<pre><code class="sql">ALTER TABLE [taula] **action**
+####actions
+* **canvi de nom d'atribut**
+```sql
+... RENAME COLUMN [nom_from] TO [nom_to]; --modifica el nom de l'atribut
+</code></pre>
+
+<ul>
+<li><strong>elimina atribut</strong></li>
+</ul>
+<pre><code class="sql">... DROP COLUMN [atr]; --borra un atribut
+</code></pre>
+
+<ul>
+<li><strong>agrega un atribut</strong></li>
+</ul>
+<pre><code class="sql">... ADD COLUMN [nom] [type] ~ [modifier]; -- agregar columna
+</code></pre>
+
+<ul>
+<li><strong>valor per defecte</strong></li>
+</ul>
+<pre><code class="sql">... ALTER COLUMN [atribut] SET DEFAULT [false];
+</code></pre>
+
+<ul>
+<li><strong>definir primary key</strong></li>
+</ul>
+<pre><code class="sql">... ADD PRIMARY KEY ([atr]);
+</code></pre>
+
+<ul>
+<li><strong>eliminar primary key modifier</strong></li>
+</ul>
+<pre><code class="sql">... DROP CONSTRAINT nomTaula_pkey;
+</code></pre>
+
+<ul>
+<li><strong>definir/eliminar NOT NULL</strong></li>
+</ul>
+<pre><code class="sql">... [SET | DROP] NOT NULL;
+</code></pre>
+
+<hr />
+<h1>Relacions</h1>
+<ul>
+<li><strong>definir primary key</strong></li>
+</ul>
+<pre><code class="sql">ALTER TABLE [taula] ADD PRIMARY KEY ([atr]);
+</code></pre>
+
+<ul>
+<li><strong>eliminar primary key modifier</strong></li>
+</ul>
+<pre><code class="sql">ALTER TABLE [taula] DROP CONSTRAINT nomTaula_pkey;
+</code></pre>
+
+<ul>
+<li><strong>Crear una tabla con una foreign key</strong></li>
+</ul>
+<pre><code class="sql">CREATE TABLE [name](OrderID serial primary key, PersonID int,
+/* asignem pkey */  PRIMARY KEY(OrderID),
+/* definim fkey */  CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+</code></pre>
+
+<ul>
+<li><strong>Eliminar una foreign key</strong></li>
+</ul>
+<pre><code class="sql">ALTER TABLE [taula] DROP CONSTRAINT [nom_de_la_foreing_key];
+</code></pre>
+
+<ul>
+<li><strong>Agregar una foreing key a una taula</strong></li>
+</ul>
+<pre><code class="sql">ALTER TABLE [taula] ADD CONSTRAINT [name] FOREIGN KEY ([atr_fk]) REFERENCES [taula_origen] ([atr_origen]);
+</code></pre>
+

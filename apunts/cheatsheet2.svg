@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg5013"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cheatsheet2.svg">
+  <defs
+     id="defs5015">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter5605">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         id="feComposite5607" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix5609" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(158,67,0)"
+         result="flood1"
+         id="feFlood5611" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="multiply"
+         result="blend1"
+         id="feBlend5613" />
+      <feBlend
+         in2="blend1"
+         mode="screen"
+         result="blend2"
+         id="feBlend5615" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix5617" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite5619" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix5621" />
+      <feComposite
+         id="feComposite5623"
+         in2="fbSourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix5625"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood5627"
+         flood-opacity="1"
+         flood-color="rgb(158,206,0)"
+         result="flood1" />
+      <feBlend
+         id="feBlend5629"
+         in2="colormatrix1"
+         in="flood1"
+         mode="multiply"
+         result="blend1" />
+      <feBlend
+         id="feBlend5631"
+         in2="blend1"
+         mode="screen"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix5633"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         id="feComposite5635"
+         in2="fbSourceGraphic"
+         in="colormatrix2"
+         operator="in"
+         k2="1"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="287.36921"
+     inkscape:cy="523.79875"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="525.71429,835.71428"
+       orientation="1,0"
+       id="guide5021" />
+    <sodipodi:guide
+       position="17.142857,220"
+       orientation="1,0"
+       id="guide5023" />
+    <sodipodi:guide
+       position="-82.857144,727.14286"
+       orientation="0,1"
+       id="guide5025" />
+    <sodipodi:guide
+       position="1034.2857,827.14285"
+       orientation="1,0"
+       id="guide5027" />
+    <sodipodi:guide
+       position="1101.4286,20"
+       orientation="0,1"
+       id="guide5029" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5018">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+       id="rect5031"
+       width="508.57141"
+       height="304.28571"
+       x="17.142857"
+       y="325.21933" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08976674;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5577"
+       width="117.76737"
+       height="14.910229"
+       x="29.330597"
+       y="318.12137" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.857143"
+       y="330.79077"
+       id="text5033"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5035"
+         x="32.857143"
+         y="330.79077">QUERY COMMANDS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.98392283;"
+       x="22.142857"
+       y="345.21936"
+       id="text5579"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5581"
+         x="22.142857"
+         y="345.21936">SELECT * FROM [table];                       </tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="359.28186"
+         id="tspan5597">SELECT [atr1], [atr2] AS [nou nom] FROM [taula];</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="373.34436"
+         id="tspan5583">SELECT * FROM [taula] WHERE [atr][comparador][value]; --ONLY els que compleixen</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="387.40686"
+         id="tspan5595">SELECT * FROM [taula] ORDER BY [atr] ASC, [atr] DESC;  -- Show ordenat /* es pot referir</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="401.46936"
+         id="tspan5599">SELECT [atr1], [atr2] FROM [taula] ORDER BY 1 ASC, 2 DESC; /*a l'atribut numerant-los*/</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="415.53186"
+         id="tspan5601" /><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="429.59436"
+         id="tspan5593" /></text>
+  </g>
+</svg>
