@@ -52,6 +52,7 @@ IN | WHERE [atr] IN (SELECT [atr] FROM [table] WHERE [condición]);
  BETWEEN	| WHERE [atr] BETWEEN [x] AND [y];
 ___
 ### Operadors aritmetics
+<<<<<<< HEAD
 
 simbol | operacio | simbol |operació
 ---  | --- | --- | ---
@@ -94,6 +95,20 @@ trunc([float])			_arrod. x truncament_
 ```sql
 current_date; 	_data actual_
 extract([day|week|month|...] from [timestamp]);
+=======
+
+simbol | operacio | simbol |operació
+---  | --- | --- | ---
+ *     |multiplicació |    /  | divisió
+ %     |modul 	       |        |
+ +     |suma	       | -      | resta
+
+### Format de cadenes
+```sql
+SELECT ( [atr] || 'string' || [atr] ||...) AS [header_name] FROM [taula];
+							----        ----
+						concatena    concat
+>>>>>>> origin/master
 ```
 
 **Agrupar**
@@ -117,6 +132,13 @@ CREATE DATABASE [name]; crear DB
 ```
 
 ```sql
+<<<<<<< HEAD
+=======
+CREATE DATABASE [name]; crear DB
+```
+
+```sql
+>>>>>>> origin/master
 DROP DATABASE [name];   eliminar DB
 ```
 ```sql
