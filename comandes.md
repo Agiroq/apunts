@@ -333,6 +333,12 @@ NO/SI repeteix duplicats a la sortida !!!
 ```sql
 SELECT * FROM [taula] UNION ~ALL SELECT * FROM [taula];
 ```	
+### NATURAL JOIN
+crea una unió basada en els noms de les columnes de les taules que es consulten
+```sql
+SELECT * FROM [taula1] NATURAL [___|inner|left|right] JOIN [taula2];
+```
+ 
 
 VISTES
 ======
@@ -364,5 +370,108 @@ DELETE FROM [vista] WHERE [condició];
 
 ## Vistes materialitzades
 A més a més, es guarden com a taula en la vase de dades
+
+# TRUCS
+
+### sequències
+
+*És una taulaque cada cop que es consulta s'incrementa el valor de tornada*  
+
+```sql
+create sequence sec_codigolibros
+start with 1000
+increment by 1
+max value 9999
+min value 1
+cycle;
+```
+Usar-ho en una taula
+
+```sql
+create table [nom] (ID nextvalue('[nom_sequencia]'), ...);
+```
+
+```sql
+DROP SEQUENCE [nom];
+```
+
+
+### Eliminació en cascada
+
+implementar al crear la taula
+```sql
+CREATE TABLE [nom] (ID integer reference [taula_conn] ON DELETE CASCADE, ...);
+```
+
+implementar un cop creada la taula
+
+```sql
+ALTER TABLE [taula] ADD CONSTRAINT [nom_constr] [taula_conn] FOREIGN KEY ([atr_dst]) REFERENCES [taula_dst] ([atr_src])
+		ON UPDATE CASCADE
+		ON DELETE CASCADE;
+```
+
+### Subconsulta / subquery
+Consultes anidades.
+
+```sql
+SELECT * FROM [table] WHERE [atr] > (SELECT avg ([atr]) FROM [table]) ;
+```
+ + Subquery d'un sol valor de resultat sol fer servir un comparador lògic
+ + Les Subconsultes que retornen llistes fan servir IN, ANY, SOME, ALL.
+ + Les que verifiquen l'existència -> EXISTS
+
+
+### Limit y offset
+
+limit --> limita el numero de registres consultats
+```sql
+SELECT * from [table] LIMIT 3; -- mostra registres 1,2,3,4 
+```
+offset --> indica a partirde quin registre començar a mostrar
+```sql
+SELECT * FROM [table] OFFSET 3; -- mostra de 3, 4, 5, ...
+```
+
+### Buckup and restore
+- backup desde pgadmin3
+- restore: crea la base nova i executar \i 'path/to/script'
+
+TRIGUERS
+========
+
+Comencem creant una funció `
+
+CREATE OR REPLACE FUNCTION rellenar_datos() RETURNS TRIGGER AS $proteger_rellenar_datos$
+DECLARE
+BEGIN
+
+	IF (TG_OP = 'INSERT' OR TG_OP = 'UPDATE') THEN
+	
+		NEW.cuadrado := power(NEW.numero, 2);
+		NEW.cubo := power(NEW.numero,3);
+		NEW.raiz := sqrt(NEW.numero);
+		NEW.raiz3 := cbrt(NEW.numero);
+		RETURN NEW;
+	ELSEIF (TG_OP ='DELETE') THEN 
+		RETURN NULL
+	
+	END IF;
+END;
+$proteger_rellenar_datos$ LANGUAGE plpgsql;
+
+
+
+`creem i assignem el triguer a una taula`
+
+CREATE TRIGGER proteger_rellenar_datos BEFORE INSERT OR UPDATE OR DELETE 
+ON numeros FOR EACH ROW
+EXECUTE PROCEDURE proteger_rellenar_datos();
+
+
+
+`borrar un TRIGGER`
+DROP TRIGGER proteger_rellenar_datos ON numeros;
+
 
 
