@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg5013"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cheatsheet2.svg">
+  <defs
+     id="defs5015">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter5605">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         id="feComposite5607" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix5609" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(158,67,0)"
+         result="flood1"
+         id="feFlood5611" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="multiply"
+         result="blend1"
+         id="feBlend5613" />
+      <feBlend
+         in2="blend1"
+         mode="screen"
+         result="blend2"
+         id="feBlend5615" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix5617" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite5619" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix5621" />
+      <feComposite
+         id="feComposite5623"
+         in2="fbSourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix5625"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood5627"
+         flood-opacity="1"
+         flood-color="rgb(158,206,0)"
+         result="flood1" />
+      <feBlend
+         id="feBlend5629"
+         in2="colormatrix1"
+         in="flood1"
+         mode="multiply"
+         result="blend1" />
+      <feBlend
+         id="feBlend5631"
+         in2="blend1"
+         mode="screen"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix5633"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         id="feComposite5635"
+         in2="fbSourceGraphic"
+         in="colormatrix2"
+         operator="in"
+         k2="1"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="598.81638"
+     inkscape:cy="363.09141"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="525.71429,835.71428"
+       orientation="1,0"
+       id="guide5021" />
+    <sodipodi:guide
+       position="17.142857,220"
+       orientation="1,0"
+       id="guide5023" />
+    <sodipodi:guide
+       position="-82.857144,727.14286"
+       orientation="0,1"
+       id="guide5025" />
+    <sodipodi:guide
+       position="1034.2857,827.14285"
+       orientation="1,0"
+       id="guide5027" />
+    <sodipodi:guide
+       position="1101.4286,20"
+       orientation="0,1"
+       id="guide5029" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5018">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.66359907;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5031"
+       width="508.90781"
+       height="133.90782"
+       x="16.974657"
+       y="337.05112" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08976674;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5577"
+       width="117.76737"
+       height="14.910229"
+       x="29.330597"
+       y="330.12137" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.857143"
+       y="342.79077"
+       id="text5033"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5035"
+         x="32.857143"
+         y="342.79077">QUERY COMMANDS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.98392286;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="22.142857"
+       y="357.21936"
+       id="text5579"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5581"
+         x="22.142857"
+         y="357.21936">SELECT * FROM [table];                       </tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="371.28186"
+         id="tspan5597">SELECT [atr1], [atr2] <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4504">AS</tspan> [nou nom] FROM [taula];</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="385.34436"
+         id="tspan5583">SELECT * FROM [taula] <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4502">WHERE</tspan> [atr][comparador][value]; </tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="399.40686"
+         id="tspan5595">SELECT * FROM [taula] ORDER BY [atr] <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4500">ASC</tspan>, [atr] <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4498">DESC</tspan>; </tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="413.46936"
+         id="tspan5599">SELECT [atr<tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4490">1</tspan>], [atr<tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4496">2</tspan>] FROM [taula] ORDER BY <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4492">1</tspan> ASC, <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4494">2</tspan> DESC;</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="427.53186"
+         id="tspan4478">SELECT * FROM [table] WHERE [atr] &gt; <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4482">(</tspan>SELECT avg ([atr]) FROM [table]<tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4480">)</tspan>;</tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="441.59436"
+         id="tspan4166"> </tspan><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="455.65686"
+         id="tspan5601" /><tspan
+         sodipodi:role="line"
+         x="22.142857"
+         y="469.71936"
+         id="tspan5593" /></text>
+    <g
+       id="g4267"
+       transform="matrix(0.3520383,0,0,0.3520383,113.16012,472.79521)">
+      <path
+         inkscape:connector-curvature="0"
+         id="ellipse4172"
+         d="m -230.71429,295.22029 a 22.857143,21.071428 0 0 0 -22.85742,21.07031 22.857143,21.071428 0 0 0 22.85742,21.07227 22.857143,21.071428 0 0 0 12.83984,-3.66406 22.857143,21.071428 0 0 0 12.875,3.66406 22.857143,21.071428 0 0 0 22.85743,-21.07227 22.857143,21.071428 0 0 0 -22.85743,-21.07031 22.857143,21.071428 0 0 0 -12.83984,3.66211 22.857143,21.071428 0 0 0 -12.875,-3.66211 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4270"
+       transform="matrix(0.3520383,0,0,0.3520383,81.225315,450.10987)">
+      <path
+         inkscape:connector-curvature="0"
+         id="ellipse4188"
+         d="m -114.54175,333.79088 a 22.857143,21.071428 0 0 0 22.857423,-21.07031 22.857143,21.071428 0 0 0 -22.857423,-21.07227 22.857143,21.071428 0 0 0 -12.83984,3.66211 22.857143,21.071428 0 0 1 9.98242,17.41016 22.857143,21.071428 0 0 1 -10.01758,17.4082 22.857143,21.071428 0 0 0 12.875,3.66211 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <g
+         transform="translate(95,-112.85714)"
+         id="g4216">
+        <ellipse
+           ry="21.071428"
+           rx="22.857143"
+           cy="425.57651"
+           cx="-235"
+           id="ellipse4218"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+           id="ellipse4220"
+           cx="-209.28572"
+           cy="425.57651"
+           rx="22.857143"
+           ry="21.071428" />
+      </g>
+    </g>
+    <g
+       id="g4261"
+       transform="matrix(0.3520383,0,0,0.3520383,113.66313,406.55334)">
+      <path
+         inkscape:connector-curvature="0"
+         id="ellipse4177"
+         d="m -232.14202,347.36314 a 22.857143,21.071428 0 0 0 -22.85743,21.07031 22.857143,21.071428 0 0 0 22.85743,21.07227 22.857143,21.071428 0 0 0 12.83789,-3.66406 22.857143,21.071428 0 0 1 -9.98243,-17.40821 22.857143,21.071428 0 0 1 10.01954,-17.4082 22.857143,21.071428 0 0 0 -12.875,-3.66211 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <g
+         transform="translate(2.8571429,-57.142857)"
+         id="g4222">
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+           id="ellipse4224"
+           cx="-235"
+           cy="425.57651"
+           rx="22.857143"
+           ry="21.071428" />
+        <ellipse
+           ry="21.071428"
+           rx="22.857143"
+           cy="425.57651"
+           cx="-209.28572"
+           id="ellipse4226"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      </g>
+    </g>
+    <g
+       id="g4241"
+       transform="matrix(0.3520383,0,0,0.3520383,114.92041,334.07958)">
+      <g
+         transform="translate(-0.71428571,80.714286)"
+         id="g4210">
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+           id="ellipse4212"
+           cx="-235"
+           cy="425.57651"
+           rx="22.857143"
+           ry="21.071428" />
+        <ellipse
+           ry="21.071428"
+           rx="22.857143"
+           cy="425.57651"
+           cx="-209.28572"
+           id="ellipse4214"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="ellipse4230"
+         d="m -222.83984,488.16727 a 22.857143,21.071428 0 0 0 -10.01758,17.41016 22.857143,21.071428 0 0 0 9.98242,17.4082 22.857143,21.071428 0 0 0 10.01758,-17.4082 22.857143,21.071428 0 0 0 -9.98242,-17.41016 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <rect
+       style="fill:#000000;fill-opacity:0.20461097;stroke:none;stroke-opacity:1"
+       id="rect4341"
+       width="508.57141"
+       height="85.714287"
+       x="17.142857"
+       y="598.64789" />
+    <rect
+       y="487.1871"
+       x="17.110651"
+       height="266.31604"
+       width="508.63583"
+       id="rect4279"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.93558967;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="480.12137"
+       x="29.330597"
+       height="14.910229"
+       width="117.76737"
+       id="rect4281"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08976674;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4283"
+       y="492.79077"
+       x="32.857143"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="492.79077"
+         x="32.857143"
+         id="tspan4285"
+         sodipodi:role="line">JOIN COMMANDS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="54.42857"
+       y="516.50507"
+       id="text4287"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4289"
+         x="54.42857"
+         y="516.50507">SELECT * FROM [tableL] INNER JOIN [tableR] ON [tableL].[atr]=[tableR].[atr];</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="528.50507"
+         id="tspan4315" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="540.50507"
+         id="tspan4317">SELECT * FROM [tableL] LEFT JOIN [tableR] USING();</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="552.50507"
+         id="tspan4319"></tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="564.50507"
+         id="tspan4321">SELECT * FROM [tableL] RIGH JOIN [tableR] USING();</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="576.50507"
+         id="tspan4323" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="588.50507"
+         id="tspan4325">SELECT * FROM [tableL] FULL JOIN [tableR] USING();</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="600.50507"
+         id="tspan4327" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="612.50507"
+         id="tspan4329">SELECT * FROM [tableL] INNER JOIN [tableR] USING()</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="624.50507"
+         id="tspan4333">    </tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="636.50507"
+         id="tspan4335">    INNER JOIN [table3] ON [tableX].[atr] = [tableZ].[atr]</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="648.50507"
+         id="tspan4337">    </tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="660.50507"
+         id="tspan4339">    ˙˙˙</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="672.50507"
+         id="tspan4351">    WHERE [condition];</tspan><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="684.50507"
+         id="tspan4331" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="696.50507"
+         id="tspan4301" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="708.50507"
+         id="tspan4297" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="720.50507"
+         id="tspan4291" /><tspan
+         sodipodi:role="line"
+         x="54.42857"
+         y="732.50507"
+         id="tspan4293" /></text>
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.58482385;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4343"
+       width="508.9866"
+       height="103.9866"
+       x="17.945421"
+       y="768.53687" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08976674;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4345"
+       width="78.481659"
+       height="14.910229"
+       x="30.34075"
+       y="760.21777" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="33.867294"
+       y="772.88721"
+       id="text4347"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4349"
+         x="33.867294"
+         y="772.88721">SEQUÈNCIES</tspan></text>
+    <rect
+       y="886.98822"
+       x="17.407009"
+       height="81.618149"
+       width="509.05328"
+       id="rect4353"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.51815325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="878.70251"
+       x="29.835672"
+       height="14.910229"
+       width="199.91023"
+       id="rect4355"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.08976674;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4357"
+       y="862.79077"
+       x="32.857143"
+       style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="862.79077"
+         x="32.857143"
+         id="tspan4359"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00000c;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="24.581581"
+       y="789.45862"
+       id="text4361"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4363"
+         x="24.581581"
+         y="789.45862"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4432">CREATE SEQUENCE</tspan> [nom_seq]                          DROP SEQUENCE [nom];</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="801.45862"
+         id="tspan4365"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4397">    start with</tspan> 1000</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="813.45862"
+         id="tspan4367"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4399">    increment</tspan> by 1</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="825.45862"
+         id="tspan4369"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4401">    max value</tspan> 9999</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="837.45862"
+         id="tspan4371"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4403">    min value</tspan> 1</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="849.45862"
+         id="tspan4383"><tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4405">    cycle</tspan>;</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="861.45862"
+         id="tspan4391">CREATE TABLE [nom] (ID <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4430">nextvalue</tspan>('[nom_sequencia]'), ...);</tspan><tspan
+         sodipodi:role="line"
+         x="24.581581"
+         y="873.45862"
+         id="tspan4426" /></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.8337006px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.45369,771.58948 -0.45851,75.02401"
+       id="path4442"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="34.076504"
+       y="891.65765"
+       id="text4444"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4446"
+         x="34.076504"
+         y="891.65765">UPDATE/DELETE EN CASCADA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="34.285713"
+       y="891.64789"
+       id="text4448"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4450"
+         x="34.285713"
+         y="891.64789"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="23.592455"
+       y="912.44373"
+       id="text4452"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4454"
+         x="23.592455"
+         y="912.44373">CREATE TABLE [nom] (ID integer <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4476">reference</tspan> [taula_orig] <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4474">ON DELETE CASCADE</tspan>, ...);</tspan><tspan
+         sodipodi:role="line"
+         x="23.592455"
+         y="924.44373"
+         id="tspan4458" /><tspan
+         sodipodi:role="line"
+         x="23.592455"
+         y="936.44373"
+         id="tspan4466">ALTER TABLE [taula] ADD CONSTRAINT [nom_constr] [taula_conn] </tspan><tspan
+         sodipodi:role="line"
+         x="23.592455"
+         y="948.44373"
+         id="tspan4464">    FOREIGN KEY ([atr_dst]) REFERENCES [taula_dst] ([atr_src])</tspan><tspan
+         sodipodi:role="line"
+         x="23.592455"
+         y="960.44373"
+         id="tspan4462">		ON [<tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4470">UPDATE</tspan> | <tspan
+   style="stroke:#000000;stroke-opacity:1"
+   id="tspan4472">DELETE</tspan>] CASCADE;</tspan><tspan
+         sodipodi:role="line"
+         x="23.592455"
+         y="972.44373"
+         id="tspan4456" /></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="545.9173"
+       y="925.58801"
+       id="text4506"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4508"
+         x="545.9173"
+         y="925.58801">SELECT comunidades.nombre, localidades.nombre FROM comunidades</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="937.58801"
+         id="tspan4510">INNER JOIN cap_com USING(id_comunidad) </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="949.58801"
+         id="tspan4512">INNER JOIN localidades USING(id_localidad) </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="961.58801"
+         id="tspan4514">INNER JOIN provincias USING (id_comunidad)</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="973.58801"
+         id="tspan4516">WHERE (select count(*) FROM provincias </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="985.58801"
+         id="tspan4520">              WHERE provincias.id_comunidad=comunidades.id_comunidad</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="997.58801"
+         id="tspan4524">              )=1;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="537.98749"
+       y="562.18396"
+       id="text4526"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="537.98749"
+         y="562.18396"
+         id="tspan4530">SELECT nombre, apellido FROM clientes WHERE </tspan><tspan
+         sodipodi:role="line"
+         x="537.98749"
+         y="574.18396"
+         id="tspan4532">                (SELECT min(substring(dni,1,8)::int) FROM clientes </tspan><tspan
+         sodipodi:role="line"
+         x="537.98749"
+         y="586.18396"
+         id="tspan4534">               	INNER JOIN ciudades using(cod_ciudad)</tspan><tspan
+         sodipodi:role="line"
+         x="537.98749"
+         y="598.18396"
+         id="tspan4538">	    GROUP BY cod_ciudad HAVING cod_ciudad=6)&gt;substring(dni,1,8)::int;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="537.58905"
+       y="638.79968"
+       id="text4548"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="537.58905"
+         y="638.79968"
+         id="tspan4554">SELECT dni FROM clientes WHERE </tspan><tspan
+         sodipodi:role="line"
+         x="537.58905"
+         y="650.79968"
+         id="tspan4564">(SELECT avg(substring(dni,1,8)::int) FROM CLIENTES) &gt; substring(dni,1,8)::int;</tspan></text>
+    <g
+       id="g4714"
+       transform="translate(0,12)">
+      <g
+         id="g4708">
+        <ellipse
+           ry="7.4179497"
+           rx="8.0465899"
+           cy="686.2561"
+           cx="27.939949"
+           id="ellipse4572"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1" />
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1"
+           id="ellipse4574"
+           cx="54.992359"
+           cy="686.2561"
+           rx="8.0465899"
+           ry="7.4179497" />
+        <text
+           xml:space="preserve"
+           style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           x="37.938812"
+           y="689.53735"
+           id="text4582"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan4584"
+             x="37.938812"
+             y="689.53735">x</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="100%"
+         id="text4586"
+         y="689.39966"
+         x="71.571426"
+         style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="689.39966"
+           x="71.571426"
+           id="tspan4588"
+           sodipodi:role="line">SELECT * FROM [table_A] CROSS JOIN [table_B];</tspan></text>
+    </g>
+    <g
+       id="g4723"
+       transform="translate(0,11.310181)">
+      <text
+         sodipodi:linespacing="100%"
+         id="text4598"
+         y="709.42603"
+         x="73.236061"
+         style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="709.42603"
+           x="73.236061"
+           id="tspan4600"
+           sodipodi:role="line">SELECT * FROM [taula][UNION | UNION ALL] SELECT * FROM [taula];</tspan></text>
+      <g
+         id="g4698">
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1"
+           id="ellipse4590"
+           cx="27.939949"
+           cy="706.2561"
+           rx="8.0465899"
+           ry="7.4179497" />
+        <ellipse
+           ry="7.4179497"
+           rx="8.0465899"
+           cy="706.2561"
+           cx="54.992359"
+           id="ellipse4592"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="100%"
+           id="text4594"
+           y="710.01782"
+           x="36.438812"
+           style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="710.01782"
+             x="36.438812"
+             id="tspan4596"
+             sodipodi:role="line">+</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.82483864px;line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           x="22.483957"
+           y="708.41479"
+           id="text4604"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan4606"
+             x="22.483957"
+             y="708.41479">sql</tspan></text>
+        <text
+           sodipodi:linespacing="100%"
+           id="text4608"
+           y="708.41479"
+           x="49.536369"
+           style="font-size:7.82483864px;line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="708.41479"
+             x="49.536369"
+             id="tspan4610"
+             sodipodi:role="line">sql</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="545.24347"
+       y="723.40625"
+       id="text4612"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4614"
+         x="545.24347"
+         y="723.40625">SELECT comunidades.nombre,sum(localidades.poblacion)  FROM comunidades</tspan><tspan
+         sodipodi:role="line"
+         x="545.24347"
+         y="735.40625"
+         id="tspan4616">INNER JOIN provincias USING (id_comunidad)</tspan><tspan
+         sodipodi:role="line"
+         x="545.24347"
+         y="747.40625"
+         id="tspan4618">INNER JOIN cap_prov USING (id_provincia)</tspan><tspan
+         sodipodi:role="line"
+         x="545.24347"
+         y="759.40625"
+         id="tspan4620">INNER JOIN localidades USING (id_localidad) </tspan><tspan
+         sodipodi:role="line"
+         x="545.24347"
+         y="771.40625"
+         id="tspan4622">GROUP BY comunidades.nombre, comunidades.poblacion </tspan><tspan
+         sodipodi:role="line"
+         x="545.24347"
+         y="783.40625"
+         id="tspan4624">HAVING  ((sum(localidades.poblacion)*100)/comunidades.poblacion)&gt;45;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="539.42145"
+       y="498.41885"
+       id="text4626"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4628"
+         x="539.42145"
+         y="498.41885">SELECT nombre, poblacion FROM localidades </tspan><tspan
+         sodipodi:role="line"
+         x="539.42145"
+         y="510.41885"
+         id="tspan4632">WHERE id_localidad NOT IN (SELECT id_localidad FROM cap_prov) </tspan><tspan
+         sodipodi:role="line"
+         x="539.42145"
+         y="522.41888"
+         id="tspan4634">AND poblacion &gt; 200000 ORDER By poblacion DESC;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="545.9173"
+       y="821.8194"
+       id="text4638"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4640"
+         x="545.9173"
+         y="821.8194">SELECT comunidades.nombre, localidades.nombre FROM comunidades</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="833.8194"
+         id="tspan4642">INNER JOIN cap_com USING(id_comunidad) </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="845.8194"
+         id="tspan4644">INNER JOIN localidades USING(id_localidad) </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="857.8194"
+         id="tspan4646">INNER JOIN provincias USING (id_comunidad)</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="869.8194"
+         id="tspan4648">WHERE (select count(*) FROM provincias </tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="881.8194"
+         id="tspan4650">             WHERE provincias.id_comunidad=comunidades.id_comunidad)</tspan><tspan
+         sodipodi:role="line"
+         x="545.9173"
+         y="893.8194"
+         id="tspan4652">             =1;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       x="536.61542"
+       y="366.79428"
+       id="text4654"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4656"
+         x="536.61542"
+         y="366.79428">CREATE TABLE clientes_mad (LIKE clientes including ALL);</tspan><tspan
+         sodipodi:role="line"
+         x="536.61542"
+         y="378.79428"
+         id="tspan4666"></tspan><tspan
+         sodipodi:role="line"
+         x="536.61542"
+         y="390.79428"
+         id="tspan4678">INSERT INTO clientes_mad  SELECT * FROM clientes WHERE cod_ciudad=5;</tspan><tspan
+         sodipodi:role="line"
+         x="536.61542"
+         y="402.79428"
+         id="tspan4668" /></text>
+    <g
+       id="g4736"
+       transform="translate(0,12)">
+      <text
+         sodipodi:linespacing="100%"
+         id="text4680"
+         y="728.04639"
+         x="72.73098"
+         style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="728.04639"
+           x="72.73098"
+           id="tspan4682"
+           sodipodi:role="line">SELECT * FROM [taula1] NATURAL [___|inner|left|right] JOIN [taula2];</tspan></text>
+      <g
+         transform="translate(0,-1.3796513)"
+         id="g4692">
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1"
+           id="ellipse4684"
+           cx="27.939949"
+           cy="726.2561"
+           rx="8.0465899"
+           ry="7.4179497" />
+        <ellipse
+           ry="7.4179497"
+           rx="8.0465899"
+           cy="726.2561"
+           cx="54.992359"
+           id="ellipse4686"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35203829;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="100%"
+           id="text4688"
+           y="729.53735"
+           x="36.438812"
+           style="line-height:100%;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="729.53735"
+             x="36.438812"
+             id="tspan4690"
+             sodipodi:role="line">=</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
