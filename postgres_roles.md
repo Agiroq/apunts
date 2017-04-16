@@ -102,7 +102,7 @@ GRANT [grup] TO [role];		--
 
 Per treurel del grup
 ```sql
-REVOQUE [grup] TO [role];	--
+REVOQUE [grup] FROM [role];	--
 ```
 #### restringir herències
 Si volem que un rol no hereti dels altres fem servir **INHERIT |NOINHERIT**
