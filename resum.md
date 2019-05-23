@@ -43,4 +43,6 @@
 > VALUES ([value], default, ...); /* quan hi ha valors **default** */
 		    |__________________________|	
 
+[] hola
+[x] adios
 
